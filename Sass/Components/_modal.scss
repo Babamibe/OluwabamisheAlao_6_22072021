@@ -1,0 +1,104 @@
+.modal{
+    &--background{
+        display: none;
+        position: fixed;
+        z-index: 1;        
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        background-color: $modal-bground;
+    }
+
+    &__content{
+        margin: 5% auto;
+        width: 550px;
+        height: 750px;
+        animation-name: modalopen;
+        animation-duration: 0.8s;
+        background: $color-secondary;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        color: $color-black;
+        padding-top: 10px;
+        &--body{
+            padding: 0;
+            margin: 15px auto;
+        }
+        &--title{
+            color: $color-black;
+            font-family: 'DM Sans';
+            font-weight: 400;
+            font-size: 50px;
+            margin:0 20px;
+        }
+    }
+    &__form{
+        &--data{
+            width: 100%;
+        }
+        label{
+            font-family: 'DM Sans';
+            font-size: 30px;
+            font-weight: normal;
+            display: inline-block;
+            margin-bottom: 2px;
+        }
+        input{
+            padding: 8px;
+            outline: none;
+            border: transparent;
+            border-radius: 5px;
+            height: 50px;
+        }
+        textarea{
+            resize: none;
+            width: 100%;
+            padding: 8px;
+            height: 170px;
+            border-radius: 5px;
+            border: transparent;
+        }
+    }
+
+    &--close{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 32px;
+        height: 32px;
+        opacity: 1;
+        cursor: pointer;
+        transform: scale(0.7);
+        &::after, &::before{
+            position: absolute;
+            left: 15px;
+            content: " ";
+            height: 33px;
+            width: 4px;
+            background-color: #fff;
+        }
+        
+        &::before{            
+            transform: rotate(45deg);
+        }
+
+        &::after{
+            transform: rotate(-45deg)
+        }
+    }
+}
+
+@keyframes modalopen {
+    from {
+      opacity: 0;
+      transform: translateY(-150px);
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+

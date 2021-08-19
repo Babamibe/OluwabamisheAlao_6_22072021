@@ -1,0 +1,44 @@
+.introduction{
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-light;
+    padding: 20px;
+    &__text{
+        ul{
+            display:flex;
+        }
+        &--contact{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h1{
+                font-size: 3em;
+                margin: 0 120px 0 0;
+                font-weight: 400;
+            }
+        }
+        &--motto{
+            color: $color-dark;
+        }
+    }
+}
+
+form{
+    margin: 20px;
+}
+
+
+.current-information{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    padding: 10px 20px;
+    border-radius: 5px 5px 0 0;
+    position: fixed;
+    background-color: $color-secondary;
+    bottom: 0;
+    right: 20px;
+    p{
+        margin: 0;
+    }
+}

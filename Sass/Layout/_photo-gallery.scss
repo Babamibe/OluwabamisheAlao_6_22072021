@@ -1,0 +1,32 @@
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    &__item{
+        margin: 20px;
+        &--content{
+            width: 350px;
+            height: 300px;
+            background:$photo-background;
+            border-radius: 5px;
+            background-size: 350px 300px;
+        }
+        img{
+            width: 350px;
+            height: 300px;
+            border-radius: 5px;
+        }
+        video{
+            width: 350px;
+            height: 300px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+    }
+    &__text{
+        display: flex;
+        justify-content: space-between;
+        i{
+            color: $color-primary;
+        }
+    }
+}

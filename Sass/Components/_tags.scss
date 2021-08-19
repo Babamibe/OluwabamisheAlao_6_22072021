@@ -1,0 +1,40 @@
+.tag{
+    color: $color-primary;
+    font-weight: bold;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    margin: 5px;
+    border: solid 1px rgba($color:$color-dark, $alpha: .2);
+    border-radius: 25px;
+    a{
+        &:visited{
+            color: $color-primary;
+        }
+    }
+}
+.active{
+    li{
+        a{
+            color: $color-light;
+        }
+    }
+    background-color: $color-primary;
+    a{
+        color: $color-light;
+        &:visited{
+            color: $color-light;
+        }
+    }    
+}
+
+li.tag{
+    &:hover{
+        background-color: $color-primary;
+        
+        a{
+            color: $color-light;        
+            
+        }
+    }
+}
+

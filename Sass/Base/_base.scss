@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    max-width: 1500px;
+    min-width: fit-content;
+}
+
+ul{
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    margin: 20px;
+}
