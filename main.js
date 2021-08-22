@@ -3,6 +3,7 @@ const modalBody = document.querySelector(".modal--background");
 const openButton = document.getElementById("open");
 const closeButton = document.getElementById("close");
 let photographerPages = document.getElementById("presentation");
+let photographerIntroSection = document.getElementById("photographer-introduction");
 let roundImage = document.getElementsByClassName("presentation__photographer--round");
 console.log(roundImage)
 
@@ -66,6 +67,7 @@ fetch('FishEyeData.json')
     //Build site pages
     .then(function(data){
         new FactoryIndexPage().photographerSite(data);
+        new FactoryPhotographerIntroduction().createPhotographerIntro(data);
         new FactoryFilter().activateTag();
         new FactoryContent().goToContent();
     })
@@ -73,7 +75,8 @@ fetch('FishEyeData.json')
         console.log(err);
     });
 
-//Add photographer pages to homepage  
+//Add photographer pages to homepage 
+ 
 class FactoryIndexPage { 
     photographerSite(data){
         let myData= [];
@@ -83,6 +86,7 @@ class FactoryIndexPage {
         console.log(photographerData);
         console.log(mediaData);
         //Create photo links to photographer pages
+        console.log("photographePages", photographerPages)
         for (let i = 0; i < photographerData.length; i++){
             let article = document.createElement("article");
             article.className = 'presentation__photographer ' + photographerData[i].tags.join(' ');            
@@ -101,8 +105,7 @@ class FactoryIndexPage {
                 ${tags(photographerData[i].tags)}        
                 
             `;
-
-            photographerPages.appendChild(article);
+            if(photographerPages){photographerPages.appendChild(article)}else{return photographerData[i].id};
         }
     }
 }
@@ -129,18 +132,18 @@ class FactoryFilter{
         let articleItem = document.querySelectorAll(".presentation__photographer");
         let tagFilter = document.getElementById("tag-filter");
         let tagButtons = tagFilter.getElementsByClassName("tag--btn");
-        for(let i = 0; i < tagButtons.length; i++){
-            tagButtons[i].addEventListener("click", function(){
-                tagButtons[i].classList.toggle("active")
-                
-            })            
-        }
-        tagFilter.addEventListener("click", event => {
-            let classValue = event.target.classList.value;
-            this.sortArticles(articleItem);
-        })
-        
+            for(let i = 0; i < tagButtons.length; i++){
+                tagButtons[i].addEventListener("click", function(){
+                    tagButtons[i].classList.toggle("active")
+                    
+                })                       
+            }
+            tagFilter.addEventListener("click", event => {
+                let classValue = event.target.classList.value;
+                this.sortArticles(articleItem);
+            })        
     }
+
     //return active tags
     filterTag(){
         let selectedFilters = document.querySelectorAll('ul li.active');
@@ -188,6 +191,41 @@ class FactoryContent{
     }
 }
 
+//display photographer information
+class FactoryPhotographerIntroduction{
+    createPhotographerIntro(data){
+        let myData= [];
+        myData.push(data);
+        let photographerData = myData[0].photographers;
+        console.log(photographerData)
+        let mediaData = myData[0].media;
+        let photographerUrl = document.location.search;
+        let urlId = photographerUrl.substring(4);  
+        console.log("message", urlId)      
+        let photographerId = photographerData.filter(photographers => photographers.id == urlId);
+        console.log("test" ,photographerId[0])
+        let photographerIntro = document.getElementById("introduction");
+        if(photographerIntro){
+            photographerIntro.innerHTML = `
+            <article class="introduction__text">
+                <div class="introduction__text--contact">
+                    <h1>${photographerId[0].name}</h1>
+                    <button id="open" class="button button--modal">Contactez-moi</button>
+                </div>
+                <p class="presentation__text--location">${photographerId[0].city}, ${photographerId[0].country}</p>
+                <p class="introduction__text--motto">${photographerId[0].tagline}</p>
+                ${tags(photographerId[0].tags)}             
+            </article>
+            <div class="presentation__photographer--round">
+                <img src="../FishEye_Photos/Sample Photos/Photographers Favorite Photos/${userPage[0].image}" alt="">
+            </div>
+            `
+        }
+
+    }    
+}
+
+
 let FactoryMedia = function(){
     this.createMedia = function(type){
         let media;
@@ -224,7 +262,8 @@ let FactoryVideo = function(element){
 //Dropdown menu
 /*document.getElementById("dropDown").addEventListener("click", activateDropdown);
 
-function activateDropdown() {
+function activateDropdown(event) {
+    event.preventDefault();
     document.getElementById("myDropdown").classList.toggle("show");
 }
 

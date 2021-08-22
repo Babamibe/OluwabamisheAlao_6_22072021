@@ -15,11 +15,11 @@
         </a>
     </header>
     <main>
-        <section class="introduction">
+        <section id="introduction" class="introduction">
             <div class="introduction__text">
                 <div class="introduction__text--contact">
                     <h1>Mimi Keel</h1>
-                    <button class="button button--modal">Contactez-moi</button>
+                    <button id="open" class="button button--modal">Contactez-moi</button>
                 </div>
                 <p class="presentation__text--location">London, UK</p>
                 <p class="introduction__text--motto">Voir le beau dans le quotidien</p>
@@ -48,21 +48,24 @@
             </div>
 
             <div class="presentation__photographer--round">
-                <img src="./FishEye_Photos/Sample Photos/Mimi/Portrait_Nora.jpg" alt="Ellie-Rose Wilkens">
+                <img src="./FishEye_Photos/Sample Photos/Photographers Favorite Photos/Portrait_Nora_Small.jpg" alt="Mimi Keel">
             </div>            
         </section>
-        <form action="">
-            <label for="">Trier par</label>
-            <select class="button" name="" id="">
-                <option value="">Popularité</option>
-                <option value="">Date</option>
-                <option value="">Titre</option>
-            </select>
+        <form class="dropdown__form">
+            <span>Trier par</span>
+            <div id="dropdown">
+                <button id="dropDown" class="dropbtn button"><p id="popularite" >Popularité <i class="fas fa-angle-down"></i></p></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <p id="date">Date</p>
+                  <p id="titre">Titre</p>
+                </div>
+            </div>
         </form>
         <section class="portfolio">
             <article class="portfolio__item">
                 <a href="">
-                    <div class="portfolio__item--square" >
+                    <div class="portfolio__item--content">
+                        <img src="./FishEye_Photos/Sample Photos/Mimi/Event_SeasideWedding.jpg" alt="">
                     </div>
                 </a>
                 <div class="portfolio__text">
@@ -73,7 +76,8 @@
             
             <article class="portfolio__item">
                 <a href="">
-                    <div class="portfolio__item--square" >
+                    <div class="portfolio__item--content">
+                        <img src="./FishEye_Photos/Sample Photos/Mimi/Event_SeasideWedding.jpg" alt="">
                     </div>
                 </a>
                 <div class="portfolio__text">
@@ -84,7 +88,8 @@
             
             <article class="portfolio__item">
                 <a href="">
-                    <div class="portfolio__item--square" >
+                    <div class="portfolio__item--content">
+                        <img src="./FishEye_Photos/Sample Photos/Mimi/Event_SeasideWedding.jpg" alt="">
                     </div>
                 </a>
                 <div class="portfolio__text">
@@ -95,7 +100,8 @@
             
             <article class="portfolio__item">
                 <a href="">
-                    <div class="portfolio__item--square" >
+                    <div class="portfolio__item--content">
+                        <img src="./FishEye_Photos/Sample Photos/Mimi/Event_SeasideWedding.jpg" alt="">
                     </div>
                 </a>
                 <div class="portfolio__text">
@@ -106,7 +112,8 @@
             
             <article class="portfolio__item">
                 <a href="">
-                    <div class="portfolio__item--square" >
+                    <div class="portfolio__item--content">
+                        <img src="./FishEye_Photos/Sample Photos/Mimi/Event_SeasideWedding.jpg" alt="">
                     </div>
                 </a>
                 <div class="portfolio__text">
@@ -117,7 +124,8 @@
             
             <article class="portfolio__item">
                 <a href="">
-                    <div class="portfolio__item--square" >
+                    <div class="portfolio__item--content">
+                        <img src="./FishEye_Photos/Sample Photos/Mimi/Event_SeasideWedding.jpg" alt="">
                     </div>
                 </a>
                 <div class="portfolio__text">
@@ -128,7 +136,8 @@
             
             <article class="portfolio__item">
                 <a href="">
-                    <div class="portfolio__item--square" >
+                    <div class="portfolio__item--content">
+                        <img src="./FishEye_Photos/Sample Photos/Mimi/Event_SeasideWedding.jpg" alt="">
                     </div>
                 </a>
                 <div class="portfolio__text">
@@ -139,7 +148,8 @@
             
             <article class="portfolio__item">
                 <a href="">
-                    <div class="portfolio__item--square" >
+                    <div class="portfolio__item--content">
+                        <img src="./FishEye_Photos/Sample Photos/Mimi/Event_SeasideWedding.jpg" alt="">
                     </div>
                 </a>
                 <div class="portfolio__text">
@@ -150,7 +160,8 @@
             
             <article class="portfolio__item">
                 <a href="">
-                    <div class="portfolio__item--square" >
+                    <div class="portfolio__item--content">
+                        <img src="./FishEye_Photos/Sample Photos/Mimi/Event_SeasideWedding.jpg" alt="">
                     </div>
                 </a>
                 <div class="portfolio__text">
@@ -161,22 +172,25 @@
             
             <article class="portfolio__item">
                 <a href="">
-                    <div class="portfolio__item--square" >
+                    <div class="portfolio__item--content">
+                        <img src="./FishEye_Photos/Sample Photos/Mimi/Event_SeasideWedding.jpg" alt="">
                     </div>
                 </a>
                 <div class="portfolio__text">
-                    <p></p>
-                    <p> <i class="fas fa-heart"></i></p>
+                    <p>Arc-en-ciel</p>
+                    <p>12 <i class="fas fa-heart"></i></p>
                 </div>
             </article>
             
             <article class="portfolio__item">
                 <a href="">
-                    <video src="./FishEye_Photos/Sample Photos/Mimi/Animals_Wild_Horses_in_the_mountains.mp4" width="200px" height="150px"></video>
+                    <div class="portfolio__item--content">
+                        <video src="./FishEye_Photos/Sample Photos/Mimi/Animals_Wild_Horses_in_the_mountains.mp4"></video>
+                    </div>
                 </a>
                 <div class="portfolio__text">
-                    <p></p>
-                    <p><i class="fas fa-heart"></i></p>
+                    <p>Arc-en-ciel</p>
+                    <p>12 <i class="fas fa-heart"></i></p>
                 </div>
             </article>
         </section>
@@ -208,8 +222,8 @@
             </div>
         </aside>
         <div class="current-information">
-            <p> <i class="fas fa-heart"></i></p>
-            <p> / jour</p>
+            <p>297 081 <i class="fas fa-heart"></i></p>
+            <p>300€ / jour</p>
         </div>
     </main>
     <script src="main.js"></script>
