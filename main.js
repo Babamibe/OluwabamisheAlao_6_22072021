@@ -93,7 +93,7 @@ class FactoryIndexPage {
             article.innerHTML = `
             <a href="${userPage[i].site}?id=${photographerData[i].id}">
                     <div class="presentation__photographer--round">
-                        <img src="../FishEye_Photos/Sample Photos/Photographers Favorite Photos/${userPage[i].image}">
+                        <img src="./FishEye_Photos/Sample Photos/Photographers Favorite Photos/${userPage[i].image}">
                     </div>
                     <h2>${photographerData[i].name}</h2>
                 </a>
@@ -117,7 +117,7 @@ function tags(tags){
     <ul>
     ${tags.map(tag => `
     <li class="tag" data-filter="${tag}">
-        <a href="">
+        <a href="#">
             #${tag}
         </a>
     </li>`).join("")}
