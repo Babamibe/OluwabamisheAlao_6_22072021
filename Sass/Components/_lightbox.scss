@@ -1,0 +1,72 @@
+.lightbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: $color-white, $alpha: 0.9);
+    z-index: 4;
+    margin: 0;
+    overflow: auto;
+    animation: lightbox .5s;
+    transition: opacity .3s;
+    .vanish{
+        opacity: 0;
+    }
+    &__prev{
+        right: auto;
+        left: 0;
+        transform: rotate(180deg);
+    }
+    &__next, &__prev{
+        background: url(../../FishEye_Photos/arrow.svg) center center / 16px 28px no-repeat;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        top: 50%;
+        right: 0;
+        margin-top: -14px;
+        z-index: 5;
+    }
+    &__close{
+        width: 22px;
+        height: 22px;
+        background: url(../../FishEye_Photos/cross.svg) center center / 100% 100% no-repeat transparent;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 6;
+    }
+    button{
+        opacity: .5;
+        cursor: pointer;
+        border: none;
+        text-indent: -3000px;
+        &:hover{
+            opacity: 1;
+        }
+    }
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin-left: 50px;
+        margin-right: 50px;
+        img, video{
+            width: auto;
+            height: 80vh;
+            border-radius: 5px;
+            animation: lightbox .5s;
+        }
+    }
+    &__title{
+        color: $color-primary;
+        margin-left: 50px;
+    }
+}
+
+@keyframes lightbox{
+    from{ opacity: 0;}
+    to{opacity: 1;}
+}

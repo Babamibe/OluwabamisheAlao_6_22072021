@@ -1,6 +1,11 @@
 .portfolio{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    @include breakpoint(small){
+        flex-direction: column;
+        align-items: center;
+    }
     &__item{
         margin: 20px;
         &--content{
@@ -9,11 +14,20 @@
             background:$photo-background;
             border-radius: 5px;
             background-size: 350px 300px;
+            @include breakpoint(small){
+                width: 250px;
+                height: 200px;
+            }
         }
         img{
             width: 350px;
             height: 300px;
             border-radius: 5px;
+            object-fit: cover;
+            @include breakpoint(small){
+                width: 250px;
+                height: 200px;
+            }
         }
         video{
             width: 350px;
@@ -23,6 +37,7 @@
         }
     }
     &__text{
+        color: $color-primary;
         display: flex;
         justify-content: space-between;
         i{

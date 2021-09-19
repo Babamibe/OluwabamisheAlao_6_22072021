@@ -1,6 +1,8 @@
 .header{
     margin-bottom: 100px;
-
+    @include breakpoint(small){
+        margin-bottom: 20px;
+    }
     &--home{
         display: flex;
         align-items: center;
@@ -14,6 +16,9 @@
     }
     img{
         width: 270px;
+        @include breakpoint(small){
+            margin-left: -30px;
+        }
     }
     &__nav{
         display: flex;

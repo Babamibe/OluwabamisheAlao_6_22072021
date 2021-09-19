@@ -31,11 +31,19 @@
             background: $photo-background;
             background-size: 300px 300px;
             background-position: -33px -23px;
+            @include breakpoint(small){
+                width: 100px;
+                height: 100px;
+            }
             img{
                 width: 300px;
                 height: 300px;
                 margin-top: -24px;
                 margin-left: -37px;
+                @include breakpoint(small){
+                    width: 180px;
+                    height: 180px;
+                }
             }
         }
         h2{
@@ -55,6 +63,10 @@
         &--location{
             color: $color-primary;
             font-weight: 400;
+            @include breakpoint(small){
+                font-size: 12px;
+                margin: 0;
+            }
         }
         &--motto{
             color: $color-black;
