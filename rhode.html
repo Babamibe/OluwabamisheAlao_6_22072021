@@ -9,14 +9,13 @@
     <title>Rhode Dubois</title>
 </head>
 <body>
-    <!--Header-->
-    <header class="header">
-        <a href="index.html">
+    <header class="header" role="banner">
+        <a href="index.html" aria-label="Fisheye Homepage">
             <img src="./FishEye_Photos/logo.png" alt="Fisheye Home page">
         </a>
     </header>
 
-    <main id="photographer-introduction">
+    <main id="photographer-introduction" aria-hidden="false">
 
         <!--Photographer profile-->
         <section id="introduction" class="introduction">
@@ -24,15 +23,15 @@
 
         <!--Dropdown Menu-->
         <form class="dropdown__menu">
-            <span>Trier par</span>
+            <label for="dropdown__categories">Trier par</label>
             <div id="dropdown">
-                <button id="dropdown__categories" class="dropbtn button" aria-haspopup="listbox">
+                <button id="dropdown__categories" class="dropbtn button" aria-haspopup="listbox" aria-expanded="false" aria-label="sort by button">
                     <p id="options-btn">Popularité</p> <i id="arrow" class="fas fa-angle-down"></i>
                 </button>
-                <ul id="dropdown__list" class="dropdown-content" role="listbox">
-                  <li id="popularite" class="sort-option" role="option">Popularité</li>
-                  <li id="date" class="sort-option" role="option">Date</li>
-                  <li id="titre" class="sort-option" role="option">Titre</li>
+                <ul id="dropdown__list" class="dropdown-content" role="listbox" aria-label="list of options">
+                  <li id="popularite" class="sort-option" role="option" tabindex="0">Popularité</li>
+                  <li id="date" class="sort-option" role="option" tabindex="0">Date</li>
+                  <li id="titre" class="sort-option" role="option" tabindex="0">Titre</li>
                 </ul>
             </div>
         </form>
@@ -46,7 +45,7 @@
         </div>
 
         <!--Modal Form-->
-        <aside class="modal modal--background">
+        <aside class="modal modal--background" role="dialog" aria-hidden="true" aria-labelledby="modal__content--title">
             <div class="modal__content">
                 <span id="close" class="modal--close"></span>
                 <div class="modal__content--body">
@@ -73,6 +72,7 @@
                 </div>
             </div>
         </aside>
+
 
     </main>
 

@@ -12,6 +12,7 @@ if(closeButton){
     modalBody.style.display = "none";
     modalBody.setAttribute("aria-hidden", "true");
     modalBody.setAttribute("aria-modal", "false");
+    photographerIntroSection.setAttribute("aria-hidden", "false");
     });
 }
 document.addEventListener("keydown", function(e){
@@ -19,6 +20,7 @@ document.addEventListener("keydown", function(e){
         modalBody.style.display = "none";
         modalBody.setAttribute("aria-hidden", "true");
         modalBody.setAttribute("aria-modal", "false");
+        photographerIntroSection.setAttribute("aria-hidden", "false");
     }
 })
 
@@ -234,6 +236,7 @@ class FactoryPhotographerIntroduction{
             `
         }
         let openButton = document.getElementById("open");
+        let mainContent = document.getElementById("photographer-introduction");
         let modalName = document.querySelector(".modal__content--title");
         let submit = document.querySelector(".button--submit");
         let prenom = document.getElementById("prenom");
@@ -250,6 +253,7 @@ class FactoryPhotographerIntroduction{
             modalBody.style.display = "block";
             modalBody.setAttribute("aria-hidden", "false");
             modalBody.setAttribute("aria-modal", "true");
+            mainContent.setAttribute("aria-hidden", "true");
             closeButton.focus();
             modalName.innerHTML = `Contactez-moi <br> ${photographerId[0].name}`
         });
@@ -430,8 +434,15 @@ class Lightbox{
             links.forEach(link => link.addEventListener("click", e => {
                 e.preventDefault()
                 new Lightbox(e.currentTarget.getAttribute("src"), sources);
+            }));
+            links.forEach(link => link.addEventListener("keypress", e => {
+                if(e.key === "Enter"){
+                    e.preventDefault()
+                    new Lightbox(e.currentTarget.getAttribute("src"), sources);
+                }
             }))
         }
+
     }
 
     /***
@@ -562,7 +573,18 @@ class DropdownMenu{
                 arrowIcon.classList.toggle("fa-angle-down");
             });
             this.sortBy(data);
+            dropBtn.addEventListener("keypress", (e) => {
+                if(e.key === "Enter"){
+                    e.preventDefault();
+                    dropDownOptions.style.display = "block";
+                    dropBtn.style.borderRadius = "5px 5px 0 0";
+                    arrowIcon.classList.toggle("fa-angle-up");
+                    arrowIcon.classList.toggle("fa-angle-down");
+                }
+            });
+            this.sortBy(data);
         }
+
     }
     //sort media by popularity, date or title
     sortBy(data){
@@ -600,7 +622,39 @@ class DropdownMenu{
             }                    
             let sortedArray = {"photographers":photoData, "media":sortedMedia};
             this.sortMedia(sortedArray);
-        }))    
+        }))
+
+        dropdownOptions.forEach((option, index) => option.addEventListener("keypress", (e) => {
+            if(e.key == "Enter"){
+                dropdownList.style.display = "none";
+                dropdownBtn.style.borderRadius = "5px";
+                if(index == 0){
+                    dropdownBtn.innerHTML = `<p id="options-btn">Popularité</p> <i id="arrow" class="fas fa-angle-down"></i>`;
+    
+                    sortedMedia = mediaData.sort((a,b) => {
+                        return b.likes - a.likes;
+                    })
+                }else if(index == 1){
+                    dropdownBtn.innerHTML = `<p id="date">Date</p> <i id="arrow" class="fas fa-angle-down"></i>`;
+    
+                    sortedMedia = mediaData.sort((a,b) => {
+                        return new Date(b.date) - new Date(a.date);
+                    })
+                }else if(index == 2){
+                    dropdownBtn.innerHTML = `<p id="options-btn">Titre</p> <i id="arrow" class="fas fa-angle-down"></i>`;
+    
+                    sortedMedia = mediaData.sort((a,b) => {
+                        if(a.title.toLowerCase() < b.title.toLowerCase()){
+                            return -1;
+                        }else{
+                            return 1;
+                        }
+                    })
+                }                    
+                let sortedArray = {"photographers":photoData, "media":sortedMedia};
+                this.sortMedia(sortedArray);
+            }            
+        }));
     }
     //create a new image gallery with sorted media
     sortMedia(sortedArray){
