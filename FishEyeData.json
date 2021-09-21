@@ -70,7 +70,8 @@
         "tags": ["fashion"],
         "likes": 62,
         "date": "2011-12-08",
-        "price": 55
+        "price": 55,
+        "alt": "Woman in a yellow outfit, posing in front of a basketball court under the bkue sky"
       },
       {
         "id": 8520927,
@@ -80,7 +81,8 @@
         "tags": ["fashion"],
         "likes": 11,
         "date": "2011-11-06",
-        "price": 55
+        "price": 55,
+        "alt": "Blond woman in a green outfit crouching on a bridge in an urban setting"
       },
       {
         "id": 9025895,
@@ -90,7 +92,8 @@
         "tags": ["fashion"],
         "likes": 72,
         "date": "2013-08-12",
-        "price": 55
+        "price": 55,
+        "alt": "Woman with long brown hair in a yellow, black and white patterned outfit, posing in front of a black and white patterned wall"
       },
       {
         "id": 9275938,
@@ -100,7 +103,8 @@
         "tags": ["events"],
         "likes": 69,
         "date": "2018-02-22",
-        "price": 55
+        "price": 55,
+        "alt": "Flower decorated wedding gazebo"
       },
       {
         "id": 2053494,
@@ -110,7 +114,8 @@
         "tags": ["events"],
         "likes": 2,
         "date": "2020-05-25",
-        "price": 55
+        "price": 55,
+        "alt": "Wedding event, man and woman surrounded by sparkled lighting"
       },
       {
         "id": 7324238,
@@ -120,7 +125,8 @@
         "tags": ["events"],
         "likes": 33,
         "date": "2019-06-12",
-        "price": 55
+        "price": 55,
+        "alt": "Decorated table and room, 18 shaped balloons"
       },
       {
         "id": 8328953,
@@ -130,7 +136,8 @@
         "tags": ["art"],
         "likes": 24,
         "date": "2011-12-08",
-        "price": 100
+        "price": 100,
+        "alt": "Sculpture of a wooden horse"
       },
       {
         "id": 7502053,
@@ -140,7 +147,8 @@
         "tags": ["art"],
         "likes": 88,
         "date": "2007-05-07",
-        "price": 55
+        "price": 55,
+        "alt": "Painting of a bi-colored man and a white triangle on a wall"
       },
       {
         "id": 8523492,
@@ -150,7 +158,8 @@
         "tags": ["art"],
         "likes": 24,
         "date": "2018-05-05",
-        "price": 55
+        "price": 55,
+        "alt": "Tunnel in a purple lighting, graffitis on the walls"
       },
       {
         "id": 75902334,
@@ -160,7 +169,8 @@
         "tags": ["art"],
         "likes": 75,
         "date": "2019-11-25",
-        "price": 55
+        "price": 55,
+        "alt": "Painting of one eyed orange and blue birds"
       },
   
       {
@@ -171,7 +181,8 @@
         "tags": ["sport"],
         "likes": 52,
         "date": "2013-02-30",
-        "price": 70
+        "price": 70,
+        "alt": "Overhead shot of rowing men"
       },
       {
         "id": 92758372,
@@ -181,7 +192,8 @@
         "tags": ["fashion"],
         "likes": 58,
         "date": "2018-07-17",
-        "price": 70
+        "price": 70,
+        "alt": "Black woman and white man posing in an asymetric fashion with their eyes closed"
       },
       {
         "id": 32958383,
@@ -191,7 +203,8 @@
         "tags": ["fashion"],
         "likes": 11,
         "date": "2019-08-12",
-        "price": 70
+        "price": 70,
+        "alt": "Dark skinned lady in a flowing red dress and flat heeled white shoes, climbing down the stairs"
       },
       {
         "id": 928587383,
@@ -201,7 +214,8 @@
         "tags": ["events"],
         "likes": 2,
         "date": "2019-01-02",
-        "price": 70
+        "price": 70,
+        "alt": "People in a conference room, computers on the tables and post-its on the walls"
       },
       {
         "id": 725639493,
@@ -211,7 +225,8 @@
         "tags": ["events"],
         "likes": 3,
         "date": "2019-05-20",
-        "price": 70
+        "price": 70,
+        "alt": "Man pitching a product in front of seated people"
       },
       {
         "id": 23394384,
@@ -221,7 +236,8 @@
         "tags": ["events"],
         "likes": 52,
         "date": "2019-07-18",
-        "price": 70
+        "price": 70,
+        "alt": "Long-haired person sitting at a keyboard"
       },
       {
         "id": 87367293,
@@ -231,7 +247,8 @@
         "tags": ["events"],
         "likes": 23,
         "date": "2018-02-22",
-        "price": 70
+        "price": 70,
+        "alt": "Person holding a mike and smiling"
       },
       {
         "id": 593834784,
@@ -241,7 +258,8 @@
         "tags": ["animals"],
         "likes": 52,
         "date": "2017-03-13",
-        "price": 70
+        "price": 70,
+        "alt": "Headshot of a stag"
       },
       {
         "id": 83958935,
@@ -251,7 +269,8 @@
         "tags": ["animals"],
         "likes": 52,
         "date": "2016-06-12",
-        "price": 70
+        "price": 70,
+        "alt": "Puppy at the beach, sunset background"
       },
   
       {
@@ -272,7 +291,8 @@
         "tags": ["travel"],
         "likes": 101,
         "date": "2017-04-03",
-        "price": 45
+        "price": 45,
+        "alt": "People bathing in an outdoor natural bath"
       },
       {
         "id": 73434243,
@@ -282,7 +302,8 @@
         "tags": ["travel"],
         "likes": 99,
         "date": "2018-04-30",
-        "price": 45
+        "price": 45,
+        "alt": "Sinuous road amid hills"
       },
       {
         "id": 23425523,
@@ -292,7 +313,8 @@
         "tags": ["travel"],
         "likes": 34,
         "date": "2016-04-05",
-        "price": 45
+        "price": 45,
+        "alt": "Bridge leading into a forest"
       },
       {
         "id": 23134513,
@@ -302,7 +324,8 @@
         "tags": ["travel"],
         "likes": 23,
         "date": "2017-03-18",
-        "price": 45
+        "price": 45,
+        "alt": "Front of a small boat in a water, forest and mountains setting"
       },
       {
         "id": 92352352,
@@ -312,7 +335,8 @@
         "tags": ["portrait"],
         "likes": 66,
         "date": "2018-05-24",
-        "price": 45
+        "price": 45,
+        "alt": "Smiling red-hair young woman with freckles in her face and red lipstick"
       },
       {
         "id": 34513453,
@@ -322,7 +346,8 @@
         "tags": ["portait"],
         "likes": 52,
         "date": "2017-04-21",
-        "price": 45
+        "price": 45,
+        "alt": "Black and white portrait of a young man staring off in the distance"
       },
       {
         "id": 23523533,
@@ -332,7 +357,8 @@
         "tags": ["portait"],
         "likes": 95,
         "date": "2018-11-02",
-        "price": 45
+        "price": 45,
+        "alt": "Black and white portrait of a young dark-skinned woman with bleached hair and eyebrows"
       },
       {
         "id": 525834234,
@@ -342,7 +368,8 @@
         "tags": ["portait"],
         "likes": 25,
         "date": "2019-01-02",
-        "price": 45
+        "price": 45,
+        "alt": "Black and white portrait of an older man holding a cigarette close to his mouth"
       },
   
       {
@@ -353,7 +380,8 @@
         "tags": ["travel"],
         "likes": 88,
         "date": "2019-02-03",
-        "price": 45
+        "price": 45,
+        "alt": "Lone figure in a hilly setting"
       },
       {
         "id": 625025343,
@@ -363,7 +391,8 @@
         "tags": ["travel"],
         "likes": 85,
         "date": "2019-04-03",
-        "price": 45
+        "price": 45,
+        "alt": "Multicolored city on a hill, next to water"
       },
       {
         "id": 2525345343,
@@ -373,7 +402,8 @@
         "tags": ["portait"],
         "likes": 34,
         "date": "2019-04-07",
-        "price": 45
+        "price": 45,
+        "alt": "Portrait of a young girl holding her face into a grimace"
       },
       {
         "id": 2523434634,
@@ -383,7 +413,8 @@
         "tags": ["portait"],
         "likes": 63,
         "date": "2019-04-07",
-        "price": 45
+        "price": 45,
+        "alt": "portrait of a nude dark-skinned girl with round brimmed glasses, leaning on the back of a sofa chair"
       },
       {
         "id": 398847109,
@@ -393,7 +424,8 @@
         "tags": ["portait"],
         "likes": 55,
         "date": "2019-06-20",
-        "price": 45
+        "price": 45,
+        "alt": "Black and white portrait of a young woman staring with her chin up"
       },
       {
         "id": 2534342,
@@ -403,7 +435,8 @@
         "tags": ["events"],
         "likes": 25,
         "date": "2019-06-21",
-        "price": 45
+        "price": 45,
+        "alt": "Decorated table and chairs on a beach"
       },
       {
         "id": 65235234,
@@ -413,7 +446,8 @@
         "tags": ["events"],
         "likes": 52,
         "date": "2019-06-25",
-        "price": 45
+        "price": 45, 
+        "alt": "Bride and groom holding each other, boulders in the background"
       },
       {
         "id": 23523434,
@@ -423,7 +457,8 @@
         "tags": ["events"],
         "likes": 77,
         "date": "2019-06-28",
-        "price": 45
+        "price": 45,
+        "alt": "Groom holding dancing bride and smiling, wedding decor in the background"
       },
       {
         "id": 5234343,
@@ -443,7 +478,8 @@
         "tags": ["animals"],
         "likes": 59,
         "date": "2019-07-02",
-        "price": 60
+        "price": 60,
+        "alt": "Brightly multicolored bird on a branch"
       },
   
       {
@@ -454,7 +490,8 @@
         "tags": ["travel"],
         "likes": 25,
         "date": "2019-04-03",
-        "price": 60
+        "price": 60,
+        "alt": "Young girls in a traditional outfit leaning towards each other in a street on Kyoto"
       },
       {
         "id": 2523434,
@@ -464,7 +501,8 @@
         "tags": ["travel"],
         "likes": 53,
         "date": "2019-05-06",
-        "price": 60
+        "price": 60,
+        "alt": "Boats on the waterways of Venice"
       },
       {
         "id": 95293534,
@@ -474,7 +512,8 @@
         "tags": ["travel"],
         "likes": 33,
         "date": "2019-05-12",
-        "price": 60
+        "price": 60,
+        "alt": "Lake surrounded by forests and mountains"
       },
       {
         "id": 356234343,
@@ -484,7 +523,8 @@
         "tags": ["travel"],
         "likes": 53,
         "date": "2019-06-20",
-        "price": 60
+        "price": 60,
+        "alt": "Bicycle leaning on stairs in a parisian street"
       },
       {
         "id": 235234343,
@@ -494,7 +534,8 @@
         "tags": ["travel"],
         "likes": 63,
         "date": "2019-06-26",
-        "price": 60
+        "price": 60,
+        "alt": "Photo through a door in an Indian palace, indian city in the background"
       },
       {
         "id": 6234234343,
@@ -504,7 +545,8 @@
         "tags": ["architecture"],
         "likes": 52,
         "date": "2019-06-30",
-        "price": 60
+        "price": 60,
+        "alt": "Russian style buildings with rounded roofs"
       },
       {
         "id": 6525666253,
@@ -514,7 +556,8 @@
         "tags": ["architecture"],
         "likes": 63,
         "date": "2019-07-20",
-        "price": 60
+        "price": 60,
+        "alt": "White and brick colored city on a hill in tibet"
       },
       {
         "id": 98252523433,
@@ -524,7 +567,8 @@
         "tags": ["architecture"],
         "likes": 88,
         "date": "2020-01-05",
-        "price": 60
+        "price": 60,
+        "alt": "Top-half of the leaning tower of Pisa"
       },
       {
         "id": 9259398453,
@@ -534,7 +578,8 @@
         "tags": ["architecture"],
         "likes": 57,
         "date": "2020-01-20",
-        "price": 65
+        "price": 65,
+        "alt": "Overhead shot of highways in Argentina, suburbs on both sides"
       },
       {
         "id": 3523523534,
@@ -544,7 +589,8 @@
         "tags": ["architecture"],
         "likes": 54,
         "date": "2020-05-05",
-        "price": 60
+        "price": 60,
+        "alt": "Symetric corner building, blue sky background"
       },
   
       {
@@ -565,7 +611,8 @@
         "tags": ["sport"],
         "likes": 101,
         "date": "2018-03-05",
-        "price": 65
+        "price": 65,
+        "alt": "Woman climbing rocks"
       },
       {
         "id": 235343222,
@@ -575,7 +622,8 @@
         "tags": ["sport"],
         "likes": 103,
         "date": "2018-03-10",
-        "price": 70
+        "price": 70,
+        "alt": "Surfer in a water tunnel"
       },
       {
         "id": 7775342343,
@@ -585,7 +633,8 @@
         "tags": ["sport"],
         "likes": 77,
         "date": "2018-04-16",
-        "price": 50
+        "price": 50,
+        "alt": "Person performing a ski cross figure"
       },
       {
         "id": 9253445784,
@@ -595,7 +644,8 @@
         "tags": ["sport"],
         "likes": 88,
         "date": "2018-04-22",
-        "price": 65
+        "price": 65,
+        "alt": "Women running in a race competition"
       },
       {
         "id": 22299394,
@@ -605,7 +655,8 @@
         "tags": ["sport"],
         "likes": 95,
         "date": "2018-04-27",
-        "price": 70
+        "price": 70,
+        "alt": "Young people performing figures in a skate park"
       },
       {
         "id": 3452342633,
@@ -615,7 +666,8 @@
         "tags": ["architecture"],
         "likes": 52,
         "date": "2018-05-03",
-        "price": 75
+        "price": 75,
+        "alt": "Underhead shot of a round multi-story building with glass ceiling"
       },
       {
         "id": 939234243,
@@ -625,7 +677,8 @@
         "tags": ["architecture"],
         "likes": 55,
         "date": "2018-05-10",
-        "price": 72
+        "price": 72,
+        "alt": "Water on rooftop of a modern building"
       },
       {
         "id": 222959233,
@@ -635,7 +688,8 @@
         "tags": ["architecture"],
         "likes": 85,
         "date": "2018-05-15",
-        "price": 71
+        "price": 71,
+        "alt": "Black and white underhead shot of a building in a horseshoe shape"
       },
       {
         "id": 965933434,
@@ -645,7 +699,8 @@
         "tags": ["architecture"],
         "likes": 66,
         "date": "2018-05-20",
-        "price": 58
+        "price": 58,
+        "alt": "Underhead shot of transparent yellow symetrical buildings forming a cross shape"
       },
       {
         "id": 777723343,
@@ -655,7 +710,8 @@
         "tags": ["architecture"],
         "likes": 79,
         "date": "2018-05-21",
-        "price": 80
+        "price": 80,
+        "alt": "Building with curved facades"
       }
     ]
   }

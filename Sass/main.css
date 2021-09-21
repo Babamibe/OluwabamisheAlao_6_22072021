@@ -76,12 +76,35 @@ h2 {
           justify-content: space-evenly;
 }
 
+@media screen and (max-width: 425px) {
+  .header--home {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+}
+
 .header--home h1 {
   color: #901C1C;
 }
 
+@media screen and (max-width: 425px) {
+  .header--home h1 {
+    margin-left: auto;
+    font-size: 1em;
+  }
+}
+
 .header__logo {
   width: 230px;
+}
+
+@media screen and (max-width: 425px) {
+  .header__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+  }
 }
 
 .header img {
@@ -91,6 +114,7 @@ h2 {
 @media screen and (max-width: 425px) {
   .header img {
     margin-left: -30px;
+    width: 180px;
   }
 }
 
@@ -110,6 +134,13 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 425px) {
+  .header__nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .portfolio {
@@ -175,6 +206,13 @@ h2 {
   border-radius: 5px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 425px) {
+  .portfolio__item video {
+    width: 250px;
+    height: 200px;
+  }
 }
 
 .portfolio__text {
@@ -263,7 +301,7 @@ h2 {
     position: fixed;
     left: 50vh;
     bottom: 20px;
-    z-index: 100;
+    z-index: 1;
   }
 }
 
@@ -309,6 +347,15 @@ form {
   z-index: 1;
 }
 
+@media screen and (max-width: 425px) {
+  .content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: unset;
+  }
+}
+
 .button {
   background-color: #901C1C;
   color: #FAFAFA;
@@ -328,6 +375,11 @@ form {
 .button--submit {
   width: 130px;
   margin-top: 25px;
+}
+
+.button--submit:hover {
+  background-color: #901C1C;
+  color: #FAFAFA;
 }
 
 .dropdown {
@@ -525,6 +577,14 @@ li.tag:hover a {
   position: relative;
   color: #000;
   padding-top: 10px;
+  z-index: 101;
+}
+
+@media screen and (max-width: 425px) {
+  .modal__content {
+    width: 100%;
+    max-width: 400px;
+  }
 }
 
 .modal__content--body {
@@ -558,6 +618,7 @@ li.tag:hover a {
   border: transparent;
   border-radius: 5px;
   height: 50px;
+  z-index: 12;
 }
 
 .modal__form textarea {
@@ -628,7 +689,7 @@ li.tag:hover a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: white;
   z-index: 4;
   margin: 0;
   overflow: auto;
@@ -677,6 +738,12 @@ li.tag:hover a {
   text-indent: -3000px;
 }
 
+@media screen and (max-width: 425px) {
+  .lightbox button {
+    opacity: 1;
+  }
+}
+
 .lightbox button:hover {
   opacity: 1;
 }
@@ -702,6 +769,12 @@ li.tag:hover a {
   border-radius: 5px;
   -webkit-animation: lightbox .5s;
           animation: lightbox .5s;
+}
+
+@media screen and (max-width: 425px) {
+  .lightbox__container img, .lightbox__container video {
+    max-width: 320px;
+  }
 }
 
 .lightbox__title {

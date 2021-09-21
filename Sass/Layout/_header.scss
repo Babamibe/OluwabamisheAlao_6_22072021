@@ -4,26 +4,43 @@
         margin-bottom: 20px;
     }
     &--home{
+        @include breakpoint(small){
+            flex-wrap: wrap-reverse;
+        }
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         h1{
+            @include breakpoint(small){
+                margin-left: auto;
+                font-size: 1em;
+            }
             color: $color-primary;
         }
     }    
     &__logo{
+        @include breakpoint(small){
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 180px;
+        }
         width: 230px;
     }
     img{
         width: 270px;
         @include breakpoint(small){
             margin-left: -30px;
+            width: 180px;
         }
     }
     &__nav{
         display: flex;
         align-items: center;
         ul{
+            @include breakpoint(small){
+                flex-wrap: wrap;
+            }
             display: flex;
             align-items: center;
         }

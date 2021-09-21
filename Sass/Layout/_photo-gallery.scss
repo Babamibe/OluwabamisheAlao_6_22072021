@@ -34,6 +34,10 @@
             height: 300px;
             border-radius: 5px;
             object-fit: cover;
+            @include breakpoint(small) {
+                width: 250px;
+                height: 200px;
+            }
         }
     }
     &__text{

@@ -10,8 +10,17 @@ let roundImage = document.getElementsByClassName("presentation__photographer--ro
 if(closeButton){
     closeButton.addEventListener("click", function(){
     modalBody.style.display = "none";
-});
+    modalBody.setAttribute("aria-hidden", "true");
+    modalBody.setAttribute("aria-modal", "false");
+    });
 }
+document.addEventListener("keydown", function(e){
+    if(e.key === "Escape" && modalBody.getAttribute("aria-hidden") == "false"){
+        modalBody.style.display = "none";
+        modalBody.setAttribute("aria-hidden", "true");
+        modalBody.setAttribute("aria-modal", "false");
+    }
+})
 
 //Objects
 let userPage = [
@@ -231,10 +240,17 @@ class FactoryPhotographerIntroduction{
         let nom = document.getElementById("nom");
         let email = document.getElementById("email");
         let message = document.getElementById("message");
+        let regexEntry = {
+            text:/^[a-zA-ZÀ-Ÿà-ÿ]+([\s\'\.\-][a-zA-ZÀ-Ÿà-ÿ]+)?([\s\'\.\-][a-zA-ZÀ-Ÿà-ÿ]+)*$/,
+            mail: /^[a-zA-Z0-9.-_]+[@]{1}[a-zA-Z0-9.-_]+[.]{1}[a-z]{2,10}$/
+        };
         // Open modal
         if(openButton){
             openButton.addEventListener("click", function(){
             modalBody.style.display = "block";
+            modalBody.setAttribute("aria-hidden", "false");
+            modalBody.setAttribute("aria-modal", "true");
+            closeButton.focus();
             modalName.innerHTML = `Contactez-moi <br> ${photographerId[0].name}`
         });
         }
@@ -242,9 +258,22 @@ class FactoryPhotographerIntroduction{
         if(submit){
             submit.addEventListener("click", function(e){
                 e.preventDefault();
-                console.log(`Personne: ${prenom.value} ${nom.value}, Email: ${email.value}, Message: ${message.value} `);
-                modalBody.style.display = "none";
+                console.log(checkEntry(prenom.value, regexEntry.text))
+                if(checkEntry(prenom.value, regexEntry.text)
+                & checkEntry(nom.value, regexEntry.text)
+                &checkEntry(email.value, regexEntry.mail)){
+                    console.log(`Personne: ${prenom.value} ${nom.value}, Email: ${email.value}, Message: ${message.value} `);
+                    modalBody.style.display = "none";
+                }
+
             })
+        }
+        function checkEntry(text, regex){
+            if(text.match(regex) && text.length >2){
+                return true;
+            }else{
+                return false;
+            }
         }
     } 
 }
@@ -309,7 +338,7 @@ class FactoryImage{
     createGalleryElement(type, name){
         let galleryImage = document.createElement('img');
         galleryImage.setAttribute('src', "./FishEye_Photos/Sample Photos/"+name.folder+"/"+type.image);    
-        galleryImage.setAttribute('alt', type.title);
+        galleryImage.setAttribute('alt', type.alt);
         galleryImage.setAttribute('role', 'button');
         galleryImage.classList.add('portfolio__item--media')
     
@@ -384,7 +413,7 @@ class Likes {
         totalCount = this.totalLikes.reduce((a,b) => (a+b));
         const infoBox = document.querySelector(".current-information__likes");
         infoBox.innerHTML= "";
-        infoBox.innerHTML = `${totalCount} <i class="fas fa-heart"></i>`;
+        infoBox.innerHTML = `${totalCount} <i class="fas fa-heart" aria-label="likes"></i>`;
     }
 }
 

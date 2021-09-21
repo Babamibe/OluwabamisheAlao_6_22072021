@@ -1,4 +1,8 @@
 .content{
+    @include breakpoint(small){
+        justify-content: center;
+        left: unset;
+    }
     position: fixed;
     display: none;
     left: 50%;
@@ -26,6 +30,10 @@
     &--submit{
         width: 130px;
         margin-top: 25px;
+        &:hover{
+            background-color: $color-primary;
+            color: $color-light;
+        }
     }
 }
 
